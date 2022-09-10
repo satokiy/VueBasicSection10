@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ChildrenView from '../views/ChildrenView.vue'
+import TeleportTest from '../views/TeleportTest.vue'
+import CompositionTest from '../views/CompositionTest.vue'
 
 const routes = [
   {
@@ -14,6 +17,21 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+  {
+    path: '/children',
+    name: 'children',
+    component: ChildrenView
+  },
+  {
+    path: '/teleport-test',
+    name: 'teleport-test',
+    component: TeleportTest
+  },
+  {
+    path: '/composition-test',
+    name: 'CompositionTest',
+    component: CompositionTest
   }
 ]
 
