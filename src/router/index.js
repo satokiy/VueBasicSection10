@@ -3,6 +3,10 @@ import HomeView from '../views/HomeView.vue'
 import ChildrenView from '../views/ChildrenView.vue'
 import TeleportTest from '../views/TeleportTest.vue'
 import CompositionTest from '../views/CompositionTest.vue'
+import PropsEmitTest from '../views/PropsEmitTest.vue'
+import FunctionTest from '../views/FunctionTest.vue'
+import RouterTest from '../views/RouterTest.vue'
+import VuexTest from '../views/VuexTest.vue'
 
 const routes = [
   {
@@ -32,7 +36,27 @@ const routes = [
     path: '/composition-test',
     name: 'CompositionTest',
     component: CompositionTest
-  }
+  },
+  {
+    path: '/props-emit-test',
+    name: 'PropsEmitTest',
+    component: PropsEmitTest
+  },
+  {
+    path: '/function-test',
+    name: 'FunctionTest',
+    component: FunctionTest
+  },
+  {
+    path: '/router-test',
+    name: 'RouterTest',
+    component: RouterTest
+  },
+  {
+    path: '/vuex-test',
+    name: 'VuexTest',
+    component: VuexTest
+  },
 ]
 
 const router = createRouter({
